@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 .menu {
-  background-color: #fff;
+  background-color: #000;
   display: flex;
   position: fixed;
   top: 0;
@@ -48,7 +48,7 @@ export default {
   @apply font-display font-bold;
   white-space: nowrap;
   overflow-x: scroll;
-  width: auto;
+  width: screen;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -58,21 +58,22 @@ export default {
 }
 
 .nav-item {
+  font-family: "Raleway";
+  font-weight: 300;
   height: 45px;
   display: inline-flex;
   cursor: pointer;
   padding: 16px 16px 14px;
   text-transform: capitalize;
   align-items: center;
-  color: black !important;
+  color: white !important;
   border-right: 1px solid rgba(0, 0, 0, 0.05) !important;
   &:last-child {
     border-right: none !important;
   }
   &.active {
-    color: #fff !important;
-    border-radius: 5px;
-    background-color: black;
+    font-weight: 700;
+    text-decoration: underline;
   }
   &:not(:last-child) {
     border-right: 0.5px solid rgba(255, 255, 255, 0.2);
@@ -82,14 +83,15 @@ export default {
 .logo {
   min-width: 65px;
   height: 60px;
-  padding: 0 50px 0 20px;
+  padding: 0 30px 0 70px;
   border-right: 1px solid rgba(255, 255, 255, 0.28);
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 500 500' version='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='orangered' d='M0 250a250 250 0 1 1 500 0 250 250 0 0 1-500 0zm250 183V250H67a183 183 0 1 1 183 183z' fill-rule='evenodd'/%3E%3C/svg%3E")
-    no-repeat center #fafafa;
+  background: url("https://forum.blivande.com/uploads/blivande/original/1X/2abfc727dad7a3f2c48a94686fff362d49feaafe.png")
+    no-repeat center #fff;
   background-size: 45%;
   transition: none;
   box-shadow: none;
   left: 0;
+  filter: invert(1);
   z-index: 99999;
 }
 </style>

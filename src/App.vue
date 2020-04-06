@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col w-full">
-    <Nav style="margin-bottom: 60px" :data="navItems" />
+    <Nav :data="navItems" />
 
     <Hero :baseUrl="data.baseUrl" :custom="getSectionData('hero')"/>
 

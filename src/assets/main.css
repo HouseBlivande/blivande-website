@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
 
 @tailwind base;
 
@@ -12,11 +12,21 @@
 
 button:focus {outline:0;}
 
-.hero_title {
-	@apply flex font-display text-3xl font-bold text-left pl-0 pb-1 mb-4 border-b border-gray-200;
-	line-height: 2.2rem;
+
+.hero_info {
+	@apply w-full justify-center;
 }
 
+.hero_info-md {
+}
+
+.hero_title {
+	@apply flex font-display text-3xl max-w-2xl mx-auto pl-0 pb-1 mb-4;
+	line-height: 2.2rem;
+  font-family: "Raleway";
+  font-weight: 300;
+  color: white;
+}
 
 .hero_title-md {
 	@apply inline-block pl-1 mb-3 text-4xl;
@@ -325,16 +335,19 @@ button:focus {outline:0;}
 	}
 
 	.content_wrapper-md {
-		@apply flex flex-row items-start px-0;
-		width: 960px;
+		@apply flex flex-row w-full items-start px-0;
 	}
 
 	.hero {
-		@apply w-full flex flex-col justify-center p-8 pb-0 relative items-center overflow-hidden bg-gray-100;
+		@apply h-screen w-screen flex flex-col justify-center p-8 pb-0 relative text-center overflow-hidden bg-gray-100;
+	}
+
+	.hero-md {
+		@apply px-32 h-screen w-screen py-10 pb-0 flex-col justify-end;
 	}
 
 	.hero .content_wrapper {
-		@apply inline-block;
+		@apply inline-block mb-24;
 	}
 	.hero .content_wrapper-md {
 		@apply flex;
@@ -345,11 +358,14 @@ button:focus {outline:0;}
 	}
 
 	.action_container {
-		@apply mt-6;
+		@apply mt-6 ;
 	}
 
 	a.action {
-		@apply p-3 mr-2 rounded-lg;
+		@apply p-3 mr-2 border border-gray-200;
+	  font-family: "Raleway";
+	  font-weight: 300;
+	  color: white;
 	}
 
 	.hero_image-md {
@@ -374,10 +390,6 @@ button:focus {outline:0;}
 		top: 0;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
-	}
-
-	.hero-md {
-		@apply px-20 py-10 pb-0 flex-col;
 	}
 
 	.hero_stats {

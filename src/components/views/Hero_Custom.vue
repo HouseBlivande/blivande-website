@@ -1,8 +1,5 @@
 <template>
     <div class="content_wrapper md:content_wrapper-md">
-      <div class="hero_image md:hero_image-md" v-if="data.image.url" :style="{flexBasis: data.image.width + 'px'}">
-        <img :src="data.image.url" />
-      </div>
       <div class="hero_info md:hero_info-md">
         <h1 class="hero_title">{{ data.title }}</h1>
         <div class="hero_text" v-html="data.text.content" :style="{textAlign: data.text.align}"></div>
