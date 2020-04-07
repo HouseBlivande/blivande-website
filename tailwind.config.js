@@ -5,7 +5,8 @@ module.exports = {
       center: true
     },
     fontFamily: {
-      display: ["Helvetica", "sans-serif"],
+      heading: ["Raleway", "sans-serif"], 
+      display: ["Raleway", "sans-serif"],
       body: ["Open Sans", "sans-serif"]
     },
     textColor: {

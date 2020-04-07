@@ -8,6 +8,7 @@
       <Custom v-if="section.type == 'custom'" :custom="section" html=true />
       <Topics v-if="section.type == 'topics'" :baseUrl="data.baseUrl" :custom="section" />
       <Events v-if="section.type == 'events'" :baseUrl="data.baseUrl" :custom="section" />
+      <TopicList v-if="section.type == 'topiclist'" :baseUrl="data.baseUrl" :custom="section" />
       <Users v-if="section.type == 'users'" :baseUrl="data.baseUrl" :custom="section" />
       <People v-if="section.type == 'people'" :baseUrl="data.baseUrl" :custom="section" />
       <Partners v-if="section.type == 'partners'" :custom="section"
@@ -29,6 +30,7 @@ import Hero from "@/components/Hero.vue";
 import Custom from "@/components/Custom.vue";
 import Events from "@/components/Events.vue";
 import Topics from "@/components/Topics.vue";
+import TopicList from "@/components/TopicList.vue";
 import People from "@/components/People.vue";
 import Users from "@/components/Users.vue";
 import Partners from "@/components/Partners.vue";
@@ -52,6 +54,7 @@ export default {
     People,
     Users,
     Topics,
+    TopicList,
     Events,
     Hero,
     Nav,
@@ -82,9 +85,10 @@ export default {
   computed: {
     navItems() {
       var navArray = this.sections.map(function(el) {
-              if (el.id) {
+              if (el.id && (el.title || el.nav)) {
                 return {
                   title: el.title,
+                  nav: el.nav,
                   id: el.id,
                 } 
               }

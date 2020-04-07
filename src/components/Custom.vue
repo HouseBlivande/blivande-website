@@ -5,7 +5,7 @@
       class="wrapper md:wrapper-md"
       :class="{ reverse: custom.text.position == 'left' }"
     >
-      <div v-if="custom.image.url" class="section_image md:section_image-md" :style="{flexBasis: custom.image.width + 'px'}">
+      <div v-if="custom.image.url" class="section_image md:section_image-md" :style="{width: custom.image.width + 'px'}">
         <img class="w-full" :src="custom.image.url" />
       </div>
 

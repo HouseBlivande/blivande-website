@@ -14,8 +14,10 @@
           :href="'#' + item.id"
           v-for="item in data"
           :key="item.id"
-          >{{ item.title }}</a
-        >
+          >
+          <span v-if="item.nav">{{ item.nav }}</span>
+          <span v-else>{{ item.title }}</span>
+        </a>
       </scrollactive>
     </div>
   </header>
