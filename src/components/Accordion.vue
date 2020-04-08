@@ -65,8 +65,8 @@ export default {
         `${this.baseUrl}/webkit_components/topics.json?${filter}=${value}&per=500&serializer=organizer`
       ).then(({ data }) => {
         this.topics = data;
-        if (this.custom.sort) {
-          this.sortBy(data, this.custom.sort_by.property, this.custom.sort_by.order)
+        if (this.custom.sort_by) {
+          this.sortBy(this.topics, this.custom.sort_by.property, this.custom.sort_by.order)
         }
       });
     },
@@ -75,16 +75,8 @@ export default {
       if (order == 'ascending') {
         ord_val = 1;
       };
-      var sorted = data.sort((a,b) => (a[value] > b[value]) ? ord_val : ((b[value] > a[value]) ? -ord_val : 0));
-      this.data = sorted;
-    },
-    getUsers() {
-      axios.get(
-        `${this.baseUrl}/webkit_components/users.json?per=500`
-      ).then(({ data }) => {
-        this.allusers = data.filter(({ bio_raw }) => bio_raw);
-        this.visibleCards = this.users;
-      });
+      var sorted = this.topics.sort((a,b) => (a[value] > b[value]) ? ord_val : ((b[value] > a[value]) ? -ord_val : 0));
+      this.topics = sorted;
     },
     open() {
       if (this.visible) {
