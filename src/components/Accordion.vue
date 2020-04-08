@@ -126,6 +126,9 @@ export default {
 }
 
 .accordion-text {
+  /deep/ p {
+    margin: 10px;
+  }
   /deep/ p ul h1 h2 h3 a {
     margin: 10px;
   }
