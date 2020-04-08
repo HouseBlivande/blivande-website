@@ -10,7 +10,7 @@
       </div>
 
       <div v-if="custom.video.src" class="section_video">
-        <video controls class="rounded-lg overflow-hidden">
+        <video controls :poster="custom.video.poster" class="overflow-hidden">
           <source :src="custom.video.src" type="video/mp4" />
 
           Sorry, your browser doesn't support embedded videos.

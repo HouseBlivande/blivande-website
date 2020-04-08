@@ -2,24 +2,6 @@
   <div class="section md:section-md" id="users">
     <div class="section_title">
       {{ custom.title }}
-      <div class="toggle_menu flex md:toggle_menu-md">
-        <div
-          class="toggle list"
-          v-if="$mq == 'md'"
-          :class="{ active: view == 'list' }"
-          @click="toggleView('list')"
-        ></div>
-        <div
-          class="toggle grid"
-          :class="{ active: view == 'grid' }"
-          @click="toggleView('grid')"
-        ></div>
-        <div
-          class="toggle cards"
-          :class="{ active: view == 'cards' }"
-          @click="toggleView('cards')"
-        ></div>
-      </div>
     </div>
     <div class="wrapper md:wrapper-md" v-if="view == 'cards'">
       <Stack
@@ -39,17 +21,6 @@
       class="wrapper md:wrapper-md"
       v-if="allusers && (view == 'list') | (view == 'grid')"
     >
-      <div class="user_grid md:user_grid-md" v-if="view == 'grid'">
-        <div
-          class="user_avatar md:user_avatar-md"
-          v-for="(item, index) in allusers"
-          :key="index"
-          @click="setActive(index)"
-          :class="{ active: selected === index }"
-          :style="{ backgroundImage: 'url(' + item.avatar_url + ')' }"
-        ></div>
-      </div>
-
       <div class="user_list md:user_list-md" v-if="view == 'list'">
         <ul>
           <li
@@ -81,7 +52,10 @@
           >
           <span v-else> @{{ allusers[selected].username }} </span>
         </a>
-        <div class="user_bio md:user_bio-md" v-html="allusers[selected].bio_raw"></div>
+        <div v-if="allusers[selected].bio_raw" class="user_bio md:user_bio-md" v-html="allusers[selected].bio_raw"></div>
+        <div v-else class="user_bio md:user_bio-md">
+          <p>No biography for this community member yet, but you can click their name to see their profile of on the forum. Members can update their profiles by going to <a :href="'https://forum.blivande.com/u/' + allusers[selected].username + '/summary' ">their profile</a>.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -96,12 +70,13 @@ export default {
   data() {
     return {
       selected: 0,
-      view: "cards",
+      view: "list",
       visibleCards: [],
       allcards: [],
       componentKey: 0,
       bio: null,
       allusers: null,
+      memberusers: null,
       filtered_users: false
     };
   },
@@ -132,14 +107,28 @@ export default {
     },
     getUsers() {
       axios.get(
-        `${this.baseUrl}/webkit_components/users.json?per=500`
+        `${this.baseUrl}/g/blivande-members/members.json?limit=500`
       ).then(({ data }) => {
-        this.allusers = data.filter(({ bio_raw }) => bio_raw);
-        this.visibleCards = this.users;
+        this.members = data.members
+        axios.get(
+          `${this.baseUrl}/webkit_components/users.json?per=500`
+        ).then(({ data }) => {
+          this.allusers = data.filter(user => this.members.find(member => user.id === member.id))
+          this.sortBy(this.allusers, 'last_seen_at', 'descending')
+          this.visibleCards = this.users;
+        });
       });
     },
     setActive(index) {
       this.selected = index;
+    },
+    sortBy(data, value, order) {
+      var ord_val = -1;
+      if (order == 'ascending') {
+        ord_val = 1;
+      };
+      var sorted = data.sort((a,b) => (a[value] > b[value]) ? ord_val : ((b[value] > a[value]) ? -ord_val : 0));
+      this.data = sorted;
     }
   },
   mounted: function() {

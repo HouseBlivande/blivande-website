@@ -16,7 +16,6 @@
           :key="item.id"
           >
           <span v-if="item.nav">{{ item.nav }}</span>
-          <span v-else>{{ item.title }}</span>
         </a>
       </scrollactive>
     </div>

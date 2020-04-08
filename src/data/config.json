@@ -11,11 +11,6 @@
       "text": {
         "align": "left",
         "buttons": [
-          {
-            "text": "GET IN TOUCH",
-            "url": "https://edgeryders.eu",
-            "background": "Transparent"
-          }
         ]
       },
       "image": {
@@ -27,18 +22,49 @@
       "type": "edgeryders",
       "id": "edgeryders",
       "title": "Always Becoming",
+      "nav": "About",
       "header1": "Always Becoming",
-      "text1": "We are collecting your stories to better understand how we can level up impact of our efforts to fix socialecological, economic, and political challenges. We want to know what you have to say, and we want others to connect and collaborate with you.",
-      "action1": "Tell us what brings you here",
-      "action1url": "https://forum.blivande.com/",
-      "header2": "Always Becoming",
-      "text2": "We are collecting your stories to better understand how we can level up impact of our efforts to fix socialecological, economic, and political challenges. We want to know what you have to say, and we want others to connect and collaborate with you.",
-      "action2": "Tell us what brings you here",
+      "text1": "House Blivande is a community for work, creativity and participatory culture in Stockholm. Our 40 to 60 members have access to offices, meeting rooms, workshops, a library, communal spaces, a wood workshop, sewing machines, an electronics labs, micromanufacturing, a metal workshop and a community to call their own.",
+      "action1": "Work & Create at Blivande",
+      "action1url": "#beta",
+      "header2": "Expanding Creativity",
+      "text2": "Our house in the harbor is the foundation for a network of organizations, groups and initiatives. We believe that by sharing our resources, we can all afford to be more generous. To make space for experiments we opened Frihamnstorget, a parking lot transformed into a public square surrounded by colorful containers. We strive to create an environment for arts, crafts, inventions and gatherings. It's a canvas open to your initiative.",
+      "action2": "Learn more about Frihamnstorget",
       "action2url": "https://forum.blivande.com/"
     },
     {
       "type": "custom",
+      "title": "Blivande Covid-19 response",
+      "nav": "Covid-19",
+      "id": "covid19",
+      "image": {
+        "url": "https://forum.blivande.com/uploads/blivande/original/1X/5ec3c8784da07bf8b84d78e4b529405c557145e4.jpeg",
+        "width": 550
+      },
+      "video": {
+        "src": "",
+        "poster": ""
+      },
+      "text": {
+        "content": "Are you wondering how you can take action that directly makes a difference during the crisis? Join us at Blivande producing visors and medical gowns for health care professionals fighting COVID-19 on the front lines. Regular people wanting to make a differece are working in shifts. You can join the effort at Blivande!",
+        "position": "right",
+        "buttons": [
+        ]
+      }
+    },
+    {
+      "type": "accordion",
+      "id": "covid19list",
+      "tag": "covid19-response-web",
+      "sort_by": {
+        "property": "title",
+        "order": "ascending"
+      }
+    },
+    {
+      "type": "custom",
       "title": "Work & Create",
+      "nav": "Work & Create",
       "id": "beta",
       "image": {
         "url": "https://forum.blivande.com/uploads/blivande/original/1X/9f1227b5c8bcfa868457c570f79d8dd7e8611e95.jpeg",
@@ -49,12 +75,12 @@
         "poster": ""
       },
       "text": {
-        "content": "Our participatory workspace Studio Beta re-defines the concept of a workspace, it is a place where you come and create in togetherness the reality you want to be living/working in.",
+        "content": "Our participatory workspace Studio Beta is an office at the heart of a community. We welcome new members to join us.",
         "position": "right",
         "buttons": [
           {
             "text": "+ Learn more",
-            "url": "https://edgeryders.eu",
+            "url": "https://forum.blivande.com/t/studio-beta/901",
             "background": "Transparent",
             "color": "black"
           }
@@ -73,12 +99,12 @@
         "poster": ""
       },
       "text": {
-        "content": "Our participatory workspace Studio Beta re-defines the concept of a workspace, it is a place where you come and create in togetherness the reality you want to be living/working in.",
+        "content": "Tau is an art space, maker space and community space fostering creation in an intimate and supportive environment, driven by the ethos of participatory culture.",
         "position": "right",
         "buttons": [
           {
             "text": "+ Learn more",
-            "url": "https://edgeryders.eu",
+            "url": "https://forum.blivande.com/t/studio-tau/902",
             "background": "Transparent",
             "color": "black"
           }
@@ -99,12 +125,12 @@
         "poster": ""
       },
       "text": {
-        "content": "Our participatory workspace Studio Beta re-defines the concept of a workspace, it is a place where you come and create in togetherness the reality you want to be living/working in.",
+        "content": "Blivande is one of the most unique event spaces in Stockholm. We can host parties, conferences, private gatherings, club nights or concerts. We have excellent audio and visual equipment and can take care of booking great DJs and entertainers.",
         "position": "right",
         "buttons": [
           {
             "text": "+ Learn more",
-            "url": "https://edgeryders.eu",
+            "url": "https://forum.blivande.com/t/blivande-events/903",
             "background": "Transparent",
             "color": "black"
           }
@@ -123,12 +149,12 @@
         "poster": ""
       },
       "text": {
-        "content": "Our participatory workspace Studio Beta re-defines the concept of a workspace, it is a place where you come and create in togetherness the reality you want to be living/working in.",
+        "content": "Noden is a radical experiment in community building. What unites the activities taking place is that they are all created with the intention of bringing people together, ideally contributing towards reinforcing a sense of purpose and meaning in our everyday lives.",
         "position": "right",
         "buttons": [
           {
             "text": "+ Learn more",
-            "url": "https://edgeryders.eu",
+            "url": "https://www.noden.community/",
             "background": "Transparent",
             "color": "black"
           }
@@ -137,15 +163,16 @@
     },
     {
       "type": "topics",
-      "title": "Stories",
-      "id": "noden",
-      "view": "featured",
-      "tag": "web-presentation",
+      "title": "Join the conversation",
+      "nav": "Stories",
+      "id": "stories",
+      "view": "cards",
+      "tag": "stories-web",
       "sort_by": {
-        "property": "title",
+        "property": "date",
         "order": "ascending"
       },
-      "display": ["title", "author", "date"],
+      "display": ["title", "date"],
       "image": {
         "url": ""
       },
@@ -154,99 +181,42 @@
         "poster": ""
       },
       "text": {
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "content": "Working together in a big community means that we can achieve more together. Since we are not all in the house at the same time, our online forum is a very important part of how we co-create. Our online community is open to everyone. Go ahead, explore a few stories we've picked from the forum.",
         "position": "left"
       }
     },
     {
-      "type": "events",
-      "title": "Calendar",
-      "id": "calendar",
-      "tag": "call",
-      "filters": {
-        "team": "blue",
-        "outreach": "green",
-        "community": "orangered"
-      }
-    },
-    {
       "type": "users",
-      "title": "Users",
+      "title": "Our community",
+      "nav": "Community",
       "id": "users",
       "category": "campfire",
       "only_bios": true
     },
     {
-      "type": "people",
-      "title": "People",
-      "id": "people",
-      "tag": "webcontent-festival-organiser-bio"
-    },
-    {
-      "type": "partners",
-      "title": "Press",
-      "id": "press",
-      "display": {
-        "slides": 3
+      "type": "custom",
+      "title": "Blivande & Edgeryders",
+      "id": "edge",
+      "image": {
+        "url": "",
+        "width": 550
       },
-      "content": [
-        {
-          "title": "DIY and Open Source care solutions",
-          "outlet": "IlSole",
-          "date": "7 May 2017",
-          "url":
-            "http://nova.ilsole24ore.com/progetti/soluzioni-di-cura-in-co-design/",
-          "logo": "assets/img/press/ilsole24ore.png",
-          "excerpt":
-            "Whether it is a ramp for disabled people or self-produced insulin, OpenCare's projects arise from collaboration between users and innovators"
-        },
-        {
-          "title": "DIY and Open Source care solutions",
-          "outlet": "Nesta",
-          "date": "11 April 2016",
-          "url": "http://www.nesta.org.uk/blog/era-development-mutants",
-          "logo": "assets/img/press/nesta.png",
-          "excerpt": "Social movements led by self-organising citizens are becoming the cutting edge of development. Establishing effective partnerships with them requires abandoning much of the implicit paternalism that informs development work"
-        },
-        {
-          "title":
-            "Eleven tips for councils on thinking creatively about adult social care",
-          "outlet": "The Guardian",
-          "date": "28 April 2014",
-          "url":
-            "https://www.theguardian.com/local-government-network/2014/apr/28/eleven-tips-councils-thinking-creatively-adult-social-care",
-          "logo": "assets/img/press/guardian.jpg",
-          "excerpt":
-            "They have brought together a whole range of people mainly (but not all!) young and radical. They are doing some incredible work there. Am sorely tempted to head off there and alter the age demographic."
-        },
-        {
-          "title":
-            "Can Monasteries Be a Model for Reclaiming Tech Culture for Good?",
-          "outlet": "The Nation",
-          "date": "27 August 2014",
-          "url":
-            "https://www.thenation.com/article/can-monasteries-be-model-reclaiming-tech-culture-good/",
-          "logo": "assets/img/press/nation.png",
-          "excerpt":
-            "What united [Edgeryders] was not a political ideology, but the dead-end conditions of austerity and the hope of figuring out better ways forward."
-        },
-        {
-          "title": "Eleven tips for councils on thinking creatively about adult social care",
-          "outlet": "The New Yorker",
-          "date": "27 April 2015",
-          "url": "https://www.newyorker.com/magazine/2015/04/27/a-cave-with-a-view",
-          "logo": "assets/img/press/newyorker.jpg",
-          "excerpt": "a group of self-described 'civic hackers' who run a 'social clinic' that embeds 'skilled individuals within communities that could benefit from their presence'."
-        },
-        {
-          "title": "When hacktivists live like monks",
-          "outlet": "Krautreporter",
-          "date": "12 November 2014",
-          "url": "https://krautreporter.de/111--wenn-hacktivisten-wie-monche-leben",
-          "logo": "assets/img/press/krautreporter.png",
-          "excerpt": "..steps towards solving the major problems plaguing small towns such as Matera: massive land run-off, reduction of social services in the wake of European austerity measures, and not least unused housing stock."
-        }
-      ]
+      "video": {
+        "src": "https://forum.blivande.com/uploads/blivande/original/1X/09a22632459d3ea1ffe5690759b023dae5f16ce8.mp4",
+        "poster": "https://forum.blivande.com/uploads/blivande/original/1X/44dc8e36fc2cc935711000d37ca5c3cee721baaf.png"
+      },
+      "text": {
+        "content": "Edgeryders is a platform of over 5.000 people who have been sharing their stories, their ideas, their problems, and their solutions since 2013. All these posts together are what we call our 'collective intelligence'. Blivande is connected to the Edgeryders network and many of our members are also contributors to Edgeryders projects.",
+        "position": "left",
+        "buttons": [
+          {
+            "text": "+ Learn more",
+            "url": "https://start.edgeryders.eu",
+            "background": "Transparent",
+            "color": "black"
+          }
+        ]
+      }
     },
     {
       "type": "terms"

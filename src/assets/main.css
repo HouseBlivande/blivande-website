@@ -77,6 +77,13 @@ button:focus {outline:0;}
   font-weight: 300;
 }
 
+.accordion_title {
+	@apply font-display text-xl flex items-center font-bold text-left pb-2 mb-3;
+  line-height: 2.2rem;
+  font-family: "Raleway";
+  font-weight: 300;
+}
+
 .section_title-md {
 	@apply mb-6;
 }
@@ -98,7 +105,7 @@ button:focus {outline:0;}
 }
 
 .section_video {
-	@apply w-full mr-4 pr-5;
+	@apply mr-4 pr-5;
 }
 
 .section_custom.reverse {
@@ -118,7 +125,6 @@ button:focus {outline:0;}
 }
 
 .wrapper.reverse .section_video {
-	@apply ml-4 pl-5;
 }
 
 .user_name {
@@ -350,7 +356,7 @@ button:focus {outline:0;}
 	}
 
 	.hero .content_wrapper {
-		@apply inline-block mb-24;
+		@apply inline-block mb-16;
 	}
 	.hero .content_wrapper-md {
 		@apply flex;
@@ -519,7 +525,7 @@ button:focus {outline:0;}
 		@apply inline-block flex-shrink-0 relative pt-4;
 		width: 300px;
 		transition: all 0.4s ease;
-		height: 380px;
+		height: 320px;
 
 		scroll-snap-align: start;
 	}
@@ -536,7 +542,7 @@ button:focus {outline:0;}
 	}
 
 	.card_row .card.topic .topic_title h2 {
-		@apply text-2xl font-bold bg-white px-2 py-2 inline;
+		@apply text-xl font-bold bg-white px-2 py-2 inline;
 		width: 90%;
 		box-decoration-break: clone;
 		-webkit-box-decoration-break: clone;
@@ -595,7 +601,7 @@ button:focus {outline:0;}
 		box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.1);
 	}
 	.card_excerpt {
-		@apply flex-grow relative overflow-scroll w-full px-0 mx-auto mt-2 pb-4 text-xs text-left;
+		@apply flex-grow relative w-full px-0 mx-auto mt-2 pb-4 text-xs text-left;
 		height: 80%;
 		width: 80%;
 		text-align: left;
@@ -608,11 +614,7 @@ button:focus {outline:0;}
 		@apply py-3 px-4 w-full text-white font-bold text-xs relative;
 		z-index: 10;
 		box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.1);
-		background: linear-gradient(
-			0deg,
-			rgba(245, 82, 0, 1) 0%,
-			rgba(255, 154, 0, 1) 100%
-		);
+		background: black;
 	}
 	.card_stack .card_footer {
 		@apply w-full py-4;

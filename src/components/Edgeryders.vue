@@ -15,7 +15,7 @@
           <p class="text-lg">
             {{custom.text1}}
           </p>
-          <a :href="custom.action1url" target="_blank"
+          <a :href="custom.action1url" 
             ><button
               class="text-black bg-transparent border border-black text-xm font-heading px-4 py-3 mt-6 leading-normal"
             >
