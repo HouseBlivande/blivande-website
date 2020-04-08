@@ -42,7 +42,7 @@
       <div class="w-full px-6" v-if="allusers[selected]">
         <a
           class="user_name"
-          :href="'https://edgeryders.eu/u/' + allusers[selected].username"
+          :href="'https://forum.blivande.com/u/' + allusers[selected].username"
         >
           <span class="mr-1">
             {{ allusers[selected].name }}
