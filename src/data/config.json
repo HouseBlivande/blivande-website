@@ -10,7 +10,18 @@
       "title": "We believe that community is essential for wellbeing. Blivande is here for you, a place to work, create and connect.",
       "text": {
         "align": "left",
-        "buttons": [
+        "buttons":
+        [
+          {
+          "text": "About Blivande",
+          "url": "#blivande",
+          "background": "Transparent"
+          },
+          {
+          "text": "Covid-19 response",
+          "url": "#covid19",
+          "background": "Transparent"
+          }
         ]
       },
       "image": {
@@ -19,36 +30,28 @@
       }
     },
     {
-      "type": "edgeryders",
-      "id": "edgeryders",
-      "title": "Always Becoming",
-      "nav": "About",
-      "header1": "Always Becoming",
-      "text1": "House Blivande is a community for work, creativity and participatory culture in Stockholm. Our 40 to 60 members have access to offices, meeting rooms, workshops, a library, communal spaces, a wood workshop, sewing machines, an electronics lab, micromanufacturing, a metal workshop and a community to call their own.",
-      "action1": "Work & Create at Blivande",
-      "action1url": "#beta",
-      "header2": "Expanding Creativity",
-      "text2": "Our house in the harbor is the foundation for a network of organizations, groups and initiatives. We believe that by sharing our resources, we can all afford to be more generous. To make space for experiments we opened Frihamnstorget, a parking lot transformed into a public square surrounded by colorful containers. We strive to create an environment for arts, crafts, inventions and gatherings. It's a canvas open to your initiative.",
-      "action2": "Learn more about Frihamnstorget",
-      "action2url": "https://forum.blivande.com/"
-    },
-    {
       "type": "custom",
       "title": "Blivande Covid-19 response",
       "nav": "Covid-19",
       "id": "covid19",
       "image": {
         "url": "https://forum.blivande.com/uploads/blivande/original/1X/5ec3c8784da07bf8b84d78e4b529405c557145e4.jpeg",
-        "width": 550
+        "width": 520
       },
       "video": {
         "src": "",
         "poster": ""
       },
       "text": {
-        "content": "Are you wondering how you can take action that directly makes a difference during the crisis? Join us at Blivande producing visors and medical gowns for health care professionals fighting COVID-19 on the front lines. Regular people wanting to make a differece are working in shifts. You can join the effort at Blivande!",
+        "content": "<p>Are you wondering how to make a difference? Join us at Blivande to make visors and medical gowns for health care professionals fighting COVID-19. Regular people wanting to make a differece are working in shifts. Sign up or just show up if you are without any symptoms. </p><p><strong>Where:</strong> Södra Hamnvägen 9, Stockholm<br><strong>When</strong>: 09:00 to 21:00, every day",
         "position": "right",
         "buttons": [
+          {
+            "text": "+ Sign up for a shift",
+            "url": "https://start.edgeryders.eu",
+            "background": "Transparent",
+            "color": "black"
+          }
         ]
       }
     },
@@ -60,6 +63,20 @@
         "property": "title",
         "order": "ascending"
       }
+    },
+    {
+      "type": "edgeryders",
+      "id": "blivande",
+      "title": "Always Becoming",
+      "nav": "About",
+      "header1": "Always Becoming",
+      "text1": "House Blivande is a community for work, creativity and participatory culture in Stockholm. Our 40 to 60 members have access to offices, meeting rooms, workshops, a library, communal spaces, a wood workshop, sewing machines, an electronics lab, micromanufacturing, a metal workshop and a community to call their own.",
+      "action1": "Work & Create at Blivande",
+      "action1url": "#beta",
+      "header2": "Expanding Creativity",
+      "text2": "Our house in the harbor is the foundation for a network of organizations, groups and initiatives. We believe that by sharing our resources, we can all afford to be more generous. To make space for experiments we opened Frihamnstorget, a parking lot transformed into a public square surrounded by colorful containers. We strive to create an environment for arts, crafts, inventions and gatherings. It's a canvas open to your initiative.",
+      "action2": "Learn more about Frihamnstorget",
+      "action2url": "https://forum.blivande.com/"
     },
     {
       "type": "custom",

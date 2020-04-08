@@ -371,7 +371,7 @@ button:focus {outline:0;}
 	}
 
 	a.action {
-		@apply p-3 mr-2 border border-gray-300;
+		@apply p-3 mr-8 border border-gray-300;
 	  font-family: "Raleway";
 	  font-weight: 300;
 	  color: white;

@@ -132,12 +132,24 @@ export default {
   /deep/ p ul h1 h2 h3 a {
     margin: 10px;
   }
+  /deep/ h3 {
+    @apply border border-black text-base font-heading px-4 py-3 mt-6 leading-normal;
+    margin: 10px;
+    font-family: "Raleway";
+    font-weight: 700;
+    width: 130px;
+    text-align: center;
+    a {
+    text-decoration: none;
+    }
+  }
   /deep/ li {
     margin-left: 30px;
     list-style-type: circle;
   }
   /deep/ video {
     margin: 30px 0px 30px 0px;
+    max-width: 400px;
   }
   /deep/ img {
     margin: 30px 0px 30px 0px;
