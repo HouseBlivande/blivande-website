@@ -128,6 +128,10 @@ export default {
   /deep/ p {
     margin: 10px;
   }
+  /deep/ a {
+    text-decoration: underline;
+    text-decoration-color: orange;
+  }
 }
 
 .accordion__trigger {
