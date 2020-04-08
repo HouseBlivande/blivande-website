@@ -52,7 +52,8 @@ export default {
     cooked: function(value) {
       return value.cooked.replace(
         'class="lightbox-wrapper"',
-        'class="lightbox-wrapper hidden"'
+        'class="lightbox-wrapper hidden"',
+        'class="meta"'
       )
     }
   },
@@ -125,12 +126,25 @@ export default {
 }
 
 .accordion-text {
-  /deep/ p {
+  /deep/ p ul h1 h2 h3 a {
     margin: 10px;
+  }
+  /deep/ li {
+    margin-left: 30px;
+    list-style-type: circle;
+  }
+  /deep/ video {
+    margin: 30px 0px 30px 0px;
+  }
+  /deep/ img {
+    margin: 30px 0px 30px 0px;
   }
   /deep/ a {
     text-decoration: underline;
     text-decoration-color: orange;
+  }
+  /deep/ .meta {
+    display: none;
   }
 }
 
