@@ -491,6 +491,7 @@ button:focus {outline:0;}
 	.user_list {
 		@apply w-full ml-6 mt-4 rounded-lg border border-gray-200 overflow-scroll;
 		max-height: 400px;
+		max-width: 300px;
 	}
 
 	.user_list li {
