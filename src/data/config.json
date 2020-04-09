@@ -13,12 +13,12 @@
         "buttons":
         [
           {
-          "text": "About Blivande",
+          "text": "About",
           "url": "#blivande",
           "background": "Transparent"
           },
           {
-          "text": "Covid-19 response",
+          "text": "Covid-19",
           "url": "#covid19",
           "background": "Transparent"
           }
