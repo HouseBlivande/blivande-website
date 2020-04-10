@@ -12,6 +12,10 @@
 
 button:focus {outline:0;}
 
+a {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
 
 .hero_info {
 	@apply w-full justify-center;
