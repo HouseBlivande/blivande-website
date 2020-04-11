@@ -12,11 +12,6 @@
 
 button:focus {outline:0;}
 
-a {
-    text-decoration: underline;
-    text-decoration-color: orange;
-}
-
 .hero_info {
 	@apply w-full justify-center;
 }
@@ -102,6 +97,11 @@ a {
 
 .section_text {
 	@apply text-lg text-left;
+}
+
+.section_text a {
+    text-decoration: underline;
+    text-decoration-color: orange;
 }
 
 .section_text-md {
