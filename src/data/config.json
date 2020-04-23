@@ -168,6 +168,18 @@
             "url": "https://www.noden.community/",
             "background": "Transparent",
             "color": "black"
+          },
+          {
+            "text": "+ Donate",
+            "url": "https://www.noden.community/donate",
+            "background": "Transparent",
+            "color": "black"
+          },
+          {
+            "text": "+ Become a member",
+            "url": "https://www.noden.community/membership",
+            "background": "Transparent",
+            "color": "black"
           }
         ]
       }
