@@ -186,7 +186,7 @@
       "view": "cards",
       "tag": "stories-web",
       "sort_by": {
-        "property": "bumped",
+        "property": "bumped_at",
         "order": "descending"
       },
       "display": ["title", "date"],
