@@ -186,8 +186,8 @@
       "view": "cards",
       "tag": "stories-web",
       "sort_by": {
-        "property": "date",
-        "order": "ascending"
+        "property": "bumped",
+        "order": "descending"
       },
       "display": ["title", "date"],
       "image": {
